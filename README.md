@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Not much done yet. The application will be using API/data from 'openweathermap.org' and a restCountry ruby-gem to provide a service of the best trips with the most amount of sun.
+Graphing Top 10s, comparing cities by weather, displaying a 'trip package' with day-by-day weather reports are all features in the making.
 
-Things you may want to cover:
+## Running the Application:
 
-* Ruby version
+To run the application, clone the repository and then install the needed gems:
 
-* System dependencies
+```
+$ bundle install --without production
+```
 
-* Configuration
+Next, migrate the database and run the rake tasks:
 
-* Database creation
+```
+$ rails db:migrate
+$ <insert rake tasks>
+```
 
-* Database initialization
+Last but not least, run the tests to verify everything is working properly:
 
-* How to run the test suite
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+If all the tests pass, the application is ready to be run:
 
-* Deployment instructions
+```
+$ rails server
+```
 
-* ...
+You can also find the app deployed on Heroku at:  http://examplelink.heroku-app.com
+
