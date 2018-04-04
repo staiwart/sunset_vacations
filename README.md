@@ -27,8 +27,8 @@ $ rails test
 If all the tests pass, the application is ready to be run:
 
 ```
-$ rails server
+$ rails server -b $IP -p $PORT
 ```
 
-You can also find the app deployed on Heroku at:  http://examplelink.heroku-app.com
+You can also find the app deployed on Heroku at:  https://sunsetvacations.herokuapp.com/
 
