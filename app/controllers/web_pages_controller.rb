@@ -4,4 +4,13 @@ class WebPagesController < ApplicationController
 
   def about
   end
+  
+  def cities
+  end
+  
+  def toptens
+  end
+  
+  def packages
+  end
 end
