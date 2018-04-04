@@ -10,5 +10,19 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
     get web_pages_about_url
     assert_response :success
   end
+  
+  test "should get cities" do
+    get web_pages_cities_url
+    assert_response :success
+  end
+  
+  test "should get toptens" do
+    get web_pages_toptens_url
+    assert_response :success
+  end
 
+  test "should get packages" do
+    get web_pages_packages_url
+    assert_response :success
+  end
 end
