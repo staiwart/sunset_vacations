@@ -24,9 +24,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 
-
-
-
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platform: :mri
