@@ -18,25 +18,11 @@
 
   <body>
     
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "sample app", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "About",   '#' %></li>
-            <li><%= link_to "Cities", '#' %></li>
-            <li><%= link_to "TopTens", '#' %></li>
-            <li><%= link_to "Packages", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
     
     <div class="container">
-      <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
-      <br>
       <%= yield %>
+      <%= render 'layouts/footer' %>
     </div>
     
   </body>
