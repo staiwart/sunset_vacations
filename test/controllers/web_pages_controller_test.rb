@@ -3,7 +3,7 @@ require 'test_helper'
 class WebPagesControllerTest < ActionDispatch::IntegrationTest
   
   def setup
-    @base_title = "Sunset Vacations" 
+    @base_title = "✈☀⛱" 
   end
   
   test "should get root" do
