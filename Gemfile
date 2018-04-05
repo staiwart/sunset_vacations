@@ -13,9 +13,11 @@ gem 'bootstrap-sass'
 gem "autoprefixer-rails"
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
-# gems for content
+# gems for country validation
 gem 'restcountry'
 
+# gems for security measures
+gem 'bcrypt'
 
 gem 'puma'       
 gem 'uglifier'
