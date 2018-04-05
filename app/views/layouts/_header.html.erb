@@ -1,12 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "Sunset Vacations", '#', id: "logo" %>
+    <%= link_to "Sunset Vacations", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
-        <li><%= link_to "Cities", '#' %></li>
-        <li><%= link_to "TopTens", '#' %></li>
-        <li><%= link_to "Packages", '#' %></li>
+        <li><%= link_to "Cities", cities_path %></li>
+        <li><%= link_to "Top 10s", toptens_path %></li>
+        <li><%= link_to "Package Deals", packages_path %></li>
       </ul>
     </nav>
   </div>
