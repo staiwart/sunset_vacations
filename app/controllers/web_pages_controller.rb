@@ -5,7 +5,7 @@ class WebPagesController < ApplicationController
   def about
   end
   
-  def cities
+  def countries
   end
   
   def toptens
