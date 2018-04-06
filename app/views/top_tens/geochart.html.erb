@@ -1,0 +1,10 @@
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+<% provide(:title, "Geo Chart") %>
+
+<div class="center jumbotron">
+  
+  <h1>Geo Chart</h1>
+
+  <%= geo_chart User.group(:country).count %>
+  
+</div>

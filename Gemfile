@@ -23,7 +23,10 @@ gem 'country_select'
 gem 'bcrypt'
 
 # gems for heroku web-server
-gem 'puma'    
+gem 'puma'
+
+# gems for graphing
+gem 'chartkick'
 
 gem 'faker'
 gem 'uglifier'

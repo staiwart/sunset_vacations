@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get '/column', to: 'top_tens#column'
+  get '/geochart', to: 'top_tens#geochart'
+  get '/weather', to: 'top_tens#weather'
+
   resources :countries
   get 'countries/index'
 

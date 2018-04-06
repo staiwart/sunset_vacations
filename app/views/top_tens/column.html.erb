@@ -1,0 +1,10 @@
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+<% provide(:title, "Column Graph") %>
+
+<div class="center jumbotron">
+  
+  <h1>Column Graph</h1>
+
+  <%= column_chart User.group(:country).order(:country).count %>
+  
+</div>

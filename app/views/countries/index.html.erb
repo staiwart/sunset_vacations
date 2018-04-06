@@ -5,7 +5,7 @@
 
 <%= will_paginate %>
 
-<table class="countries">
+<table class="countries table table-striped table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -25,9 +25,11 @@
         <td><%= country.capital %></td>
         <td><%= country.language %></td>
         <td><%= country.currency %></td>
-        <% if current_user.admin? && !current_user?(user) %>
-          <td><%= link_to 'Edit', edit_country_path(country) %></td>
-          <td><%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if not current_user.nil?%>
+          <% if current_user.admin? %>
+            <td><%= link_to 'Edit', edit_country_path(country) %></td>
+            <td><%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
         <% end %>
       </tr>
     <% end %>
