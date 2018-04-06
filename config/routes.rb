@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get '/countries', to: 'web_pages#countries'
   get '/toptens', to: 'web_pages#toptens'
   get '/packages', to: 'web_pages#packages'
+  
   get '/signup', to: 'users#new'
+  post '/signup', to: 'user#create'
+  resources :users
 
 end

@@ -15,6 +15,7 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 # gems for country validation
 gem 'restcountry'
+gem 'country_select'
 
 # gems for security measures
 gem 'bcrypt'
