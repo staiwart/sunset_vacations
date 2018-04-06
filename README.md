@@ -16,6 +16,7 @@ Next, migrate the database and run the rake tasks:
 ```
 $ rails db:migrate
 $ rails db:seed
+$ rake countries:seed_countries
 ```
 
 Last but not least, run the tests to verify everything is working properly:
