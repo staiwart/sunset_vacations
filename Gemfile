@@ -20,7 +20,9 @@ gem 'country_select'
 # gems for security measures
 gem 'bcrypt'
 
-gem 'puma'       
+# gems for heroku web-server
+gem 'puma'    
+
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
