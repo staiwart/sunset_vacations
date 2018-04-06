@@ -1,1 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+roynd:
+  name: Royndar Brúkari
+  email: roynd@hvar.fo
+  password_digest: <%= User.digest('L0yniord') %>

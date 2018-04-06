@@ -10,7 +10,7 @@
       <%= f.label :name, "Full Name" %>
       <%= f.text_field :name, class: 'form-control', placeholder: 'John Doe' %>
 
-      <%= f.label :email %>
+      <%= f.label :email, "E-Mail" %>
       <%= f.email_field :email, class: 'form-control', placeholder: 'name@example.com' %>
       
       <%= f.label :country %>
@@ -22,7 +22,7 @@
       <%= f.label :password_confirmation, "Password Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control', placeholder: '•'*6 %>
 
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <%= f.submit "Create My Account", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
