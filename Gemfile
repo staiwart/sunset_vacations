@@ -10,6 +10,8 @@ gem 'rails'
 # gems for using bootstrap
 gem 'sass-rails'
 gem 'bootstrap-sass'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem "autoprefixer-rails"
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
@@ -23,6 +25,7 @@ gem 'bcrypt'
 # gems for heroku web-server
 gem 'puma'    
 
+gem 'faker'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'

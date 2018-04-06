@@ -15,7 +15,7 @@ Next, migrate the database and run the rake tasks:
 
 ```
 $ rails db:migrate
-$ <insert rake tasks>
+$ rails db:seed
 ```
 
 Last but not least, run the tests to verify everything is working properly:

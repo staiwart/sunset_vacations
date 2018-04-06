@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  
-  get 'sessions/new'
 
   root 'web_pages#home'
   get '/about', to: 'web_pages#about'

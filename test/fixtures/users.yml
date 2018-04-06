@@ -3,4 +3,42 @@
 roynd:
   name: Royndar Brúkari
   email: roynd@hvar.fo
+  country: Faroe Islands
   password_digest: <%= User.digest('L0yniord') %>
+  admin: true
+  
+brukari:
+  name: Brúkara Roynd
+  email: roynd@okkara.fo
+  country: Faroe Islands
+  password_digest: <%= User.digest('L0yni0rd') %>
+  
+eitt:
+  name: Roynd Eitt
+  email: roynd@eitt.com
+  password_digest: <%= User.digest('password') %>
+
+tvey:
+  name: Roynd Tvey
+  email: roynd@tvey.gov
+  password_digest: <%= User.digest('Password') %>
+
+try:
+  name: Roynd Try
+  email: roynd@try.net
+  password_digest: <%= User.digest('Passw0rd') %>
+
+fyra:
+  name: Roynd Fyra
+  email: roynd@fyra.co.uk
+  password_digest: <%= User.digest('P4ssword') %>
+
+fimm:
+  name: Roynd Fimm
+  email: roynd@fimm.ac.uk
+  password_digest: <%= User.digest('P4ssw0rd') %>
+  
+seks:
+  name: Roynd Seks
+  email: roynd@seks.dk
+  password_digest: <%= User.digest('Zaq1Xsw2') %>

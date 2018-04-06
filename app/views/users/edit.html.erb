@@ -1,4 +1,5 @@
 <% provide(:title, "Settings") %>
+
 <h1>Update your Profile</h1>
 
 <div class="row">
@@ -9,17 +10,17 @@
       <%= f.label :name, "Full Name" %>
       <%= f.text_field :name, class: 'form-control', placeholder: "#{@user.name}" %>
 
-      <%= f.label :email,  "E-Mail" %>
+      <%= f.label :email, "E-Mail" %>
       <%= f.email_field :email, class: 'form-control', placeholder: "#{@user.email}"  %>
       
       <%= f.label :country %>
       <%= f.country_select :country, class: 'form-control', prompt: "#{@user.country}"  %>
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control', placeholder: '•'*6  %>
+      <%= f.password_field :password, class: 'form-control', placeholder: '•'*6 %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' , placeholder: '•'*6 %>
+      <%= f.label :password_confirmation, "Password Confirmation" %>
+      <%= f.password_field :password_confirmation, class: 'form-control', placeholder: '•'*6 %>
 
       <%= f.submit "Save Changes", class: "btn btn-primary" %>
     <% end %>
