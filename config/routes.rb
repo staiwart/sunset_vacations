@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :countries
+  get 'countries/index'
+
   root 'web_pages#home'
   get '/about', to: 'web_pages#about'
   get '/countries', to: 'web_pages#countries'

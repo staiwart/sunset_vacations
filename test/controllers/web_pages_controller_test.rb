@@ -18,12 +18,6 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "#{@base_title} >> About"
   end
   
-  test "should get countries" do
-    get countries_path
-    assert_response :success
-    assert_select "title", "#{@base_title} >> Countries"
-  end
-  
   test "should get toptens" do
     get toptens_path
     assert_response :success

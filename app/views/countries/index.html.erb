@@ -1,0 +1,39 @@
+<% provide(:title, "Countries") %>
+<p id="notice"><%= notice %></p>
+
+<h1>List of Countries</h1>
+
+<%= will_paginate %>
+
+<table class="countries">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Region</th>
+      <th>Capital</th>
+      <th>Language</th>
+      <th>Currency</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @countries.each do |country| %>
+      <tr>
+        <td><%= link_to country.name, country %></td>
+        <td><%= country.region %></td>
+        <td><%= country.capital %></td>
+        <td><%= country.language %></td>
+        <td><%= country.currency %></td>
+        <% if current_user.admin? && !current_user?(user) %>
+          <td><%= link_to 'Edit', edit_country_path(country) %></td>
+          <td><%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= will_paginate %>
+
+<br>
